@@ -1,4 +1,4 @@
 # Cryptopals
 
-Some [cryptopals](https://cryptopals.com/https://cryptopals.com/) solved challenges
+Some [cryptopals](https://cryptopals.com/) solved challenges
 in python3.
