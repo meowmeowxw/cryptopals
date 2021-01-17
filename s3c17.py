@@ -23,9 +23,7 @@ class Oracle:
 
     def decrypt(self, ciphertext):
         result = self.cbc.decrypt(ciphertext)
-        if result != None:
-            return True
-        return False
+        return result is not None
 
 class CBC_Padding_Oracle:
 

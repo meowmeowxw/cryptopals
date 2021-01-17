@@ -29,8 +29,7 @@ class CBC_Bit_Flip:
     def __init__(self, oracle, charlist, debug):
         self.oracle = oracle
         self.charlist = charlist
-        if debug == True:
-            self.debug = True
+        self.debug = debug
 
     def get_bsize(self):
         plaintext = ''
@@ -59,7 +58,7 @@ class CBC_Bit_Flip:
         equal_length = self.get_prefix()
         # payload[:16] will be decrypted in garbage
         payload = 'a' * (bsize * 2)
-        if self.debug == True:
+        if self.debug:
             print(Fore.YELLOW + "[*] Dictionary : " + str(dict))
             print(Fore.YELLOW + "[*] Payload : " + str(payload))
             print(Fore.YELLOW + "[*] Blocksize : " + str(bsize))
